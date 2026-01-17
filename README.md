@@ -1,5 +1,7 @@
 ## 📦 Hytale EnergyStorage
 
+[EnergyStorage Curse Project](https://www.curseforge.com/hytale/mods/energystorage)
+
 Energy Storage API is a lightweight developer‑focused library for Hytale mods. It provides a fully‑featured, component‑based energy system that other mods can easily integrate into their machines, blocks, entities, or custom gameplay systems. This mod does **not** add gameplay content by itself. Instead, it exposes a clean and extensible API built around Hytale’s official `ComponentRegistryProxy`, `ComponentType`, and `BuilderCode`c systems, ensuring maximum compatibility and stability across mods. Use this library when you want to give your machines the ability to store, receive, or extract energy in a predictable and standardized way.
 
 ***
