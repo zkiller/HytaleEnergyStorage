@@ -125,8 +125,8 @@ import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
 import com.hypixel.hytale.server.core.universe.world.storage.ChunkStore;
-import dev.zkiller.machinefactory.generators.solar.SolarGeneratorComponent;
-import dev.zkiller.machinefactory.generators.solar.SolarGeneratorSystem;
+import dev.zkiller.examplemod.generators.solar.SolarGeneratorComponent;
+import dev.zkiller.examplemod.generators.solar.SolarGeneratorSystem;
 
 import javax.annotation.Nonnull;
 
@@ -158,7 +158,7 @@ public class ExampleMod extends JavaPlugin {
         LOGGER.atInfo().log("Solar Generator component and system registered successfully!");
     }
 
-    public static MachineFactory getInstance() {
+    public static ExampleMod getInstance() {
         return instance;
     }
 
@@ -256,7 +256,7 @@ public final class SolarGeneratorSystem extends EntityTickingSystem<ChunkStore> 
         long inserted = energy.receiveEnergyInternal(produced, false);
         
         // Console Debug
-        System.out.println("[MachineFactory] Inserted: " + inserted +
+        System.out.println("[ExampleMod] Inserted: " + inserted +
                 " FE | Stored: " + energy.getEnergyStored() +
                 "/" + energy.getMaxEnergyStored());
     }
